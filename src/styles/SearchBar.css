@@ -1,0 +1,33 @@
+.search-bar {
+    /* Add your styles here */
+    position: relative;
+    display: inline-block;
+    width: 300px; /* Keep the width static */
+    height: auto; /* Adjust height to content */
+    background-color: black; /* Invert background color */
+    color: white; /* Invert text color */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Optional shadow for better visibility */
+    padding: 8px; /* Round padding to an even number */
+    border: 1px solid #ccc; /* Match border with other filters */
+    border-radius: 4px; /* Match border radius with other filters */
+    overflow-y: auto; /* Scroll if content overflows */
+    z-index: 1000; /* Ensure it stays on top */
+    margin-bottom: 20px; /* Add bottom margin */
+    font-size: 16px; /* Increase text size */
+}
+
+.search-bar input {
+    padding: 4px; /* Round padding to an even number */
+    border: none; /* Match border with other filters */
+    border-radius: 4px; /* Match border radius with other filters */
+    background-color: black; /* Invert background color */
+    color: white; /* Invert text color */
+    font-size: 16px; /* Increase text size */
+}
+
+.search-bar input:focus {
+    outline: none; /* Remove outline on focus */
+    background-color: black; /* Invert background color on focus */
+    color: white; /* Ensure text color remains inverted on focus */
+    font-size: 16px; /* Increase text size */
+}

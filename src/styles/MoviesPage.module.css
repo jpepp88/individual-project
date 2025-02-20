@@ -1,0 +1,39 @@
+.moviesPage {
+  padding: 16px; /* Round padding to an even number */
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  margin: 0; /* Remove default margin */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.moviesPage h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.movieCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 50px; /* Add margin to the left side */
+}
+
+.filtersContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-left: 50px; /* Add margin to the left side */
+}
+
+.clearButton {
+  padding: 8px 16px; /* Round padding to an even number */
+  background-color: #f9f9f9; /* Match background color with filters */
+  color: black; /* Match text color with filters */
+  border: 1px solid #ccc; /* Match border with filters */
+  border-radius: 4px; /* Match border radius with filters */
+  cursor: pointer;
+}
+
+.clearButton:hover {
+  background-color: #e9e9e9; /* Match hover background color with filters */
+}

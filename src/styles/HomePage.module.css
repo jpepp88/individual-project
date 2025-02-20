@@ -1,0 +1,27 @@
+.home-page {
+  padding: 16px; /* Round padding to an even number */
+  background: #000; /* Changed to black */
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  margin: 0; /* Remove default margin */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.image-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-slider img {
+  width: 100%;
+  display: block;
+}
+
+/* New styles for the about section */
+.aboutSection {
+  color: white; /* Text color */
+  font-size: 1.5em; /* Font size */
+  margin: 20px 0; /* Top and bottom margin */
+  text-align: center; /* Center text */
+}
+
