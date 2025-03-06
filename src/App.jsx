@@ -18,28 +18,17 @@ function App() {
   };
 
   return (
-    <div className="App" style={{ backgroundColor: '#000', minHeight: '100vh', padding: '0' }}>
-      <nav style={{ backgroundColor: '#333', padding: '12px 10px 20px 15px', textAlign: 'left', margin: '0' }}>
+    <div className="App">
+      <nav>
         <h1 
           onClick={() => setCurrentPage('home')} 
-          style={{ 
-            marginRight: '20px', 
-            display: 'inline', 
-            cursor: 'pointer', 
-            color: '#fff', 
-            borderBottom: currentPage === 'home' ? '4px solid #fff' : 'none' 
-          }}
+          className={currentPage === 'home' ? 'active' : ''}
         >
           Home
         </h1>
         <h1 
           onClick={() => setCurrentPage('movies')} 
-          style={{ 
-            display: 'inline', 
-            cursor: 'pointer', 
-            color: '#fff', 
-            borderBottom: currentPage === 'movies' ? '4px solid #fff' : 'none' 
-          }}
+          className={currentPage === 'movies' ? 'active' : ''}
         >
           Movies
         </h1>

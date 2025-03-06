@@ -1,22 +1,21 @@
 .ratingFilter {
-  padding: 8px 16px; /* Round padding to an even number */
-  /* Invert background and text color */
+  padding: 8px 16px;
   border: none;
   background-color: white;
   border-radius: 4px;
 }
 
 .ratingFilter select {
-  padding: 8px; /* Round padding to an even number */
+  padding: 8px;
   border: none;
   border-radius: 4px;
-  background-color: white; /* Invert background color */
-  color: black; /* Invert text color */
-  font-size: 16px; /* Increase text size */
+  background-color: white;
+  color: black;
+  font-size: 16px;
 }
 
 .ratingFilter select:focus {
   outline: none;
-  background-color: white; /* Invert background color on focus */
-  color: black; /* Ensure text color remains inverted on focus */
+  background-color: white;
+  color: black;
 }

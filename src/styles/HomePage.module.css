@@ -1,27 +1,50 @@
-.home-page {
-  padding: 16px; /* Round padding to an even number */
-  background: #000; /* Changed to black */
-  width: 100vw; /* Full width */
-  height: 100vh; /* Full height */
-  margin: 0; /* Remove default margin */
-  overflow: hidden; /* Prevent overflow */
-}
-
-.image-slider {
-  width: 100%;
+.homePage {
+  padding: 16px;
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.image-slider img {
+.imageSlider {
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.imageSlider img {
   width: 100%;
   display: block;
 }
 
-/* New styles for the about section */
 .aboutSection {
-  color: white; /* Text color */
-  font-size: 1.5em; /* Font size */
-  margin: 20px 0; /* Top and bottom margin */
-  text-align: center; /* Center text */
+  color: white;
+  font-size: 2em;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .aboutSection {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutSection {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutSection {
+    font-size: 1em;
+  }
 }
 

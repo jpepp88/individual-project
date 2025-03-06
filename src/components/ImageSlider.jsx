@@ -1,4 +1,4 @@
-import styles from "../styles/ImageSlider.module.css"; // Import the CSS module correctly
+import styles from "../styles/ImageSlider.module.css";
 import image1 from "../assets/starwars_anew.jpeg";
 import image2 from "../assets/starwars_empire.jpeg";
 import image3 from "../assets/starwars_return.jpeg";
@@ -9,9 +9,8 @@ import React, { useState } from 'react';
 const ImageSlider = () => {
   const [imageIndex, setImageIndex] = useState(0);
 
-  const images = [image1, image2, image3]; // Add your image paths here
+  const images = [image1, image2, image3];
 
-  // Function to manually slide to the next or previous image
   const slideImage = (direction) => {
     const newIndex = direction === 'next' ? (imageIndex + 1) % images.length : (imageIndex - 1 + images.length) % images.length;
     setImageIndex(newIndex);
@@ -19,17 +18,19 @@ const ImageSlider = () => {
 
   return (
     <div className={styles.sliderContainer}>
-      <button id="prev" className={styles.button} onClick={() => slideImage('prev')}>
-        <img src={arrow2} alt="Previous" className={styles.arrow} />
-      </button>
-      <div className={styles.wrapper}>
-        <div className={styles.imageContainer}>
-          <img src={images[imageIndex]} alt={`slide ${imageIndex}`} className={styles.image} /> // Apply image class
+      <div className={styles.buttonContainer}>
+        <button className={styles.prevButton} onClick={() => slideImage('prev')}>
+          <img src={arrow2} alt="Previous" className={styles.arrow} />
+        </button>
+        <div className={styles.wrapper}>
+          <div className={styles.imageContainer}>
+            <img src={images[imageIndex]} alt={`slide ${imageIndex}`} className={styles.image} />
+          </div>
         </div>
+        <button className={styles.nextButton} onClick={() => slideImage('next')}>
+          <img src={arrow} alt="Next" className={styles.arrow} />
+        </button>
       </div>
-      <button id="next" className={styles.button} onClick={() => slideImage('next')}>
-        <img src={arrow} alt="Next" className={styles.arrow} />
-      </button>
     </div>
   );
 };

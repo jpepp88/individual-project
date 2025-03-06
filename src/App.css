@@ -1,13 +1,32 @@
 .App {
   text-align: center;
+  background-color: #000;
+  min-height: 100vh;
+  padding: 0;
 }
 
 nav {
   margin-bottom: 20px;
-  width: 100vw; /* Full width */
-  margin: 0; /* Remove default margin */
-  padding: 10px 0; /* Add padding for spacing */
-  background-color: #f8f9fa; /* Optional: background color */
+  width: 100vw;
+  margin: 0;
+  padding: 12px 10px 20px 15px;
+  background-color: #333;
+  text-align: left;
+}
+
+nav h1 {
+  display: inline;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 20px;
+}
+
+nav h1.active {
+  border-bottom: 4px solid #fff;
+}
+
+nav h1:last-child {
+  margin-right: 0;
 }
 
 nav button {

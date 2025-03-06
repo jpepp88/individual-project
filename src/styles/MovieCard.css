@@ -19,7 +19,7 @@
 
 .movie-card-content {
     padding: 5px 20px 10px 20px;
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 .movie-card-content h3 {
@@ -33,6 +33,6 @@
 }
 
 .movie-card-content p {
-    margin: 2px 0; /* Reduce the margin between elements */
+    margin: 2px 0;
     color: #aeaeae;
 }
