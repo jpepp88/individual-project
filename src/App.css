@@ -3,6 +3,7 @@
   background-color: #000;
   min-height: 100vh;
   padding: 0;
+  overflow-y: auto;
 }
 
 nav {
@@ -22,11 +23,33 @@ nav h1 {
 }
 
 nav h1.active {
+  border-bottom: 4px solid transparent; 
+}
+
+nav h1:hover {
   border-bottom: 4px solid #fff;
 }
 
 nav h1:last-child {
   margin-right: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 4px solid transparent;
+}
+
+nav a.active {
+  border-bottom-color: #fff;
+}
+
+nav a:hover {
+  border-bottom-color: #fff; 
+}
+
+nav a.active:hover {
+  border-bottom-color: #fff;
 }
 
 nav button {

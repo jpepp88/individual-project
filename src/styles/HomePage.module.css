@@ -4,7 +4,6 @@
   width: 100vw;
   height: 100vh;
   margin: 0;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,8 +17,19 @@
 }
 
 .imageSlider img {
-  width: 100%;
   display: block;
+}
+
+.imageSlider button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.imageSlider button:focus {
+  outline: none;
 }
 
 .aboutSection {

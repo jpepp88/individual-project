@@ -8,7 +8,7 @@ const GenreFilter = ({ onFilter }) => {
 
   return (
     <div className="genreFilter">
-      <select onChange={handleFilter}>
+      <select onChange={handleFilter} className="genre-filter">
         <option value="all">All Genres</option>
         <option value="action">Action</option>
         <option value="comedy">Comedy</option>

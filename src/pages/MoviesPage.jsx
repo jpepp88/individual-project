@@ -53,8 +53,11 @@ const MoviesPage = () => {
 
   const handleClearFilters = () => {
     setSearchTerm('');
-    setGenre('');
-    setRating('');
+    setGenre('all');
+    setRating('all');
+    document.querySelector('.search-bar').value = ''; 
+    document.querySelector('.genre-filter').value = 'all';
+    document.querySelector('.rating-filter').value = 'all';
   };
 
   const handleNextPage = () => {
